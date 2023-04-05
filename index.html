@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Mailing</title>
+</head>
+<style>
+    *,
+    *::before,
+    *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+        font-family: 'Poppins', sans-serif;
+        
+    }
+    .container { padding-inline: 16px;}
+
+    
+    @media (min-width: 575px) {
+
+        .container{
+        max-width: 540px;
+        width: 100%;
+        margin-inline: auto;
+        }
+    }
+    @media (min-width: 768px) {
+        .container { max-width: 720px; }
+    }
+    @media (min-width: 992px) {
+        .container { max-width: 960px; }
+    }
+    @media (min-width: 1200px) {
+        .container { max-width: 1140px; }
+    }
+    @media (min-width: 1400px) {
+        .container { max-width: 1320px; }
+    }
+
+    .button-container img{
+        /* width:700px; 
+        height:1100px; */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+    .button-container{
+    display:inline-block;
+    position:relative;
+    }
+    .button-container .btn a{
+    position: absolute;
+    bottom:11.5em;
+    right:3em;
+    background-color:#f99400;
+    border-radius:1.5em;
+    color:#072d70;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    
+    text-decoration: none;
+    padding:10px 25px;
+    
+    }
+    
+    .btn-agenda{
+        margin-right: 280px;
+    }
+
+    /* @media only screen and (max-width:360px) {
+        
+        .button-container .btn a{
+        position:relative;
+        bottom:16.5em;
+        right:1px;
+        background-color:#758f00;
+        color:white;
+        font-size: 10px;
+        padding:10px 20px;
+        border-color:white;
+        border-radius:1.5em;
+        }
+        .btn-agenda{
+            margin-right: 20px;
+        }
+        
+    } */
+    @media only screen and (max-width:412px) {
+    
+        .button-container .btn a{
+        position:relative;
+        bottom:14em;
+        right:1px;
+        background-color:#f99400;
+        color:#072d70;
+        font-size: 12px;
+        padding:7px 10px;
+        /* border-color:white; */
+        border-radius:1.5em;
+        }
+        .btn-agenda{
+            margin-right: 20px;
+        }
+        
+    }
+    
+</style>
+
+<body>
+    <div class="container">
+        <center>
+            <div class="button-container">
+                <a href="https://www.iteprevengo.com/" target="_blank"><img src="img.jpg" alt="mailing-ItPrevengo"></a>
+                
+                    <div class="btn">
+                        <a href="https://www.google.com/" alt="Agenda una demo" class="btn-agenda" target="_blank"><i>Agenda una demo</i></a>
+                        <a href="https://www.youtube.com/" alt="Más información"target="_blank"><i>Más información</i></a>
+                    </div>
+               
+                <!-- <div class="btn">
+                    <a href="#" alt="Más información"><i>Más información</i></a>
+                </div> -->
+            </div>
+            
+        </center>
+    </div>
+
+
+
+</body>
+</html>
